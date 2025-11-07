@@ -1,0 +1,72 @@
+/* Styles for temple.html */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header and footer */
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+header p, footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    max-width: 600px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+/* Headings */
+h1 {
+    color: #111;
+    margin-bottom: 20px;
+}
+
+h2 {
+    background-color: #eee;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+/* Image styling */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraphs and lists */
+section {
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
