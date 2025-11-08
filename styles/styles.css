@@ -2,6 +2,10 @@ main {
     max-width: 840px;
 }
 
+h1 {
+    color: #000;
+}
+
 aside {
     width: 20rem;
     margin: 1rem;
@@ -12,6 +16,12 @@ aside {
     text-align: center;
 }
 
+nav {
+    color: #000;
+    padding: 5px;
+    display: block;
+}
+
 aside img {
     width: 200px;
     height: auto;
@@ -20,6 +30,9 @@ aside img {
 main img {
     width: 250px;
     height: auto;
+    border: #000;
+    padding: 5px;
+    box-shadow: #000;
 }
 
 p {
@@ -28,6 +41,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-radius: 1px;
-    text-align: left;
+    border-top: 1px;
+    text-align: center;
 }
