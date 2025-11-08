@@ -18,7 +18,7 @@ aside img {
 }
 
 main img {
-    width: 150px;
+    width: 250px;
     height: auto;
 }
 
@@ -29,5 +29,5 @@ p {
 footer {
     margin-top: 15px;
     border-radius: 1px solid #000;
-    text-align: center;
+    text-align: left;
 }
