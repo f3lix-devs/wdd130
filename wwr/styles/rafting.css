@@ -16,10 +16,17 @@
 
 header {
   display: grid;
-  grid-template-columns: auto 1fr; /* logo then nav */
+  grid-template-columns: auto 1fr; 
   align-items: center;
   padding: 8px 0;
 }
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* push links to the right */
+  gap: 16px; /* spacing between links */
+}
+
 
 header img {
   width: 60px;
@@ -53,13 +60,6 @@ header img {
   width: 100%;
   border-radius: 6px;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-
-nav {
-  display: flex;
-  justify-content: flex-end; /* push links to the right */
-  gap: 16px; /* spacing between links */
 }
 
 nav a {
