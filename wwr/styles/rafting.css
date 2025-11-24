@@ -6,12 +6,19 @@
   --background-color: #e9d8a6;   
   --heading-font: 'Segoe UI', sans-serif;
   --body-font: 'Roboto', sans-serif;
+  --white: #ffffff;
 }
 
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--primary-color); /* better contrast */
+  background-color: var(--background-color);
 }
 
 header {
@@ -21,16 +28,25 @@ header {
   padding: 8px 0;
 }
 
+header img {
+  width: 50px; 
+  height: auto;
+}
+
 nav {
   display: flex;
   justify-content: flex-end; /* push links to the right */
   gap: 16px; /* spacing between links */
 }
 
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
 
-header img {
-  width: 60px;
-  height: auto;
+nav a:hover {
+  color: var(--accent2-color); /* now using the unused variable */
 }
 
 .history-layout {
@@ -39,11 +55,11 @@ header img {
   gap: 16px;
   align-items: center;
 }
+
 .history-layout img {
   width: 100%;
   border-radius: 8px;
 }
-
 
 .adventure-gallery {
   display: flex;
@@ -60,19 +76,6 @@ header img {
   width: 100%;
   border-radius: 6px;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: var(--background-color);
 }
 
 header, main, footer {
@@ -94,7 +97,6 @@ nav, p, section, article {
   text-decoration: none;
 }
 
-
 .hero {
   position: relative;
 }
@@ -111,9 +113,9 @@ nav, p, section, article {
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.9; /* slightly stronger for contrast */
   background-color: var(--accent1-color);
-  color: #fff;
+  color: var(--white);
   font-size: 2rem;
 }
 
@@ -122,11 +124,12 @@ nav, p, section, article {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95); /* stronger contrast */
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
 .hero article img {
   float: right;
   width: 125px;
@@ -134,12 +137,6 @@ nav, p, section, article {
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
-
-header img {
-  width: 50px; 
-  height: auto;
-}
-
 
 .socialmedia img {
   width: 32px; 
@@ -163,4 +160,3 @@ footer .socialmedia {
   justify-content: flex-end;
   gap: 12px;
 }
-
