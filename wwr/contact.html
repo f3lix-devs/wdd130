@@ -1,106 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Get in touch with White Water Rafting. Find our address, phone, email, and use the contact form to ask questions or make reservations.">
-    <meta name="author" content="Felix Armah">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting | Contact Us</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact White Water Rafting for reservations, general inquiries, or website suggestions. Find our address, phone, email, and map.">
+  <meta name="author" content="Felix Armah">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Water Rafting | Contact Us</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="White Water Rafting Co. Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
+  <header>
+    <img src="images/logo.jpg" alt="White Water Rafting Co. Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="contact-intro">
-            <h1>Contact White Water Rafting Company</h1>
-            <address>
-                123 Main River Street<br>
-                Kolob, California<br>
-                <a href="tel:+19999999999">+1 999 999 9999</a><br>
-                <a href="mailto:info@whitewater.com">info@whitewater.com</a>
-            </address>
-        </section>
+  <main>
+    <section class="contact-intro">
+      <h1>Contact White Water Rafting Company</h1>
+      <address>
+        123 Main River Street<br>
+        Kolob, California<br>
+        <a href="tel:+19999999999">+1 999 999 9999</a><br>
+        <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+      </address>
+      <!-- Embedded Google Map -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
-        <section class="contact-grid">
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531531595!3d-37.81627944202178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzE0LjQiRQ!5e0!3m2!1sen!2sus!4v1610000000000"
-                    width="100%" height="320" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
-                    title="Map to White Water Rafting Company"></iframe>
-            </div>
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="White Water Rafting River Guide - Alex">
+        <figcaption>River Guide - Alex</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="White Water Rafting Safety Lead - Priya">
+        <figcaption>Safety Lead - Priya</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="White Water Rafting Reservations Manager - Marco">
+        <figcaption>Reservations Manager - Marco</figcaption>
+      </figure>
+    </section>
 
-            <form class="contact-form" action="#" method="post">
-                <fieldset>
-                    <legend>Send Us a Message</legend>
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
 
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text" placeholder="Your full name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <p>Purpose of Message:</p>
+        <input type="radio" id="inquiry" name="purpose" value="inquiry">
+        <label for="inquiry">General Inquiry</label><br>
 
-                    <fieldset class="purpose">
-                        <legend>Message Purpose</legend>
-                        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
-                    </fieldset>
+        <input type="radio" id="reservation" name="purpose" value="reservation">
+        <label for="reservation">Reservation Question</label><br>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Type here..." required></textarea>
+        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+        <label for="suggestion">Website Suggestion</label><br>
 
-                    <label class="inline">
-                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
-                    </label>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
 
-                    <button type="submit" class="btn-primary">Get in Touch!</button>
-                </fieldset>
-            </form>
-        </section>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
 
-        <section class="staff">
-            <h2>We Are Here to Serve You</h2>
-            <div class="staff-grid">
-                <figure>
-                    <img src="images/employee1.jpg" alt="Profile of River Guide - Alex"> 
-                    <figcaption>Alex Johnson — Senior River Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="Profile of Safety Lead - Priya"> 
-                    <figcaption>Priya Patel — Safety Lead</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Profile of Reservations Manager - Marco"> 
-                    <figcaption>Marco Rossi — Reservations Manager</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 White Water Rafting Co. | Felix Armah</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook-icon.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter-icon.png" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.jpg" alt="Instagram">
-            </a>
-        </nav>
-    </footer>
+  <footer>
+    <p>© 2025 White Water Rafting Co. | Felix Armah</p>
+    <nav class="socialmedia">
+      <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+    </nav>
+  </footer>
 </body>
 </html>
+
